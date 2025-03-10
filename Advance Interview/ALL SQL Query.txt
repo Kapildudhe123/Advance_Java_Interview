@@ -26,6 +26,9 @@ mysql> create table emp(id int, name varchar(50), salary int);
 
 mysql> alter table emp add primary key(id);
 
+# Index Query:-
+CREATE INDEX idx_name ON Employee (first_name);
+
 # Foreign Key:-
 mysql> create table emp(id int primary key, name varchar(50), salary int, dept_id int, foreign key(dept_id) references dept(id) on update cascade on delete cascade);
 
